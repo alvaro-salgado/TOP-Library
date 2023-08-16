@@ -1,0 +1,79 @@
+:root{
+    --text-white: #F6F4EB;
+    --blue-dark: #4682A9;
+    --blue-clear: #91C8E4;
+    --purple-clear: #749BC2;
+    --purple-dark: #4E4FEB;
+}
+
+
+.container-main{
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+}
+
+.header-container{
+    height: 10vh;
+    background-color: var(--blue-dark);
+    color: var(--text-white);
+    display: grid;
+    grid-template: 1fr / 1fr;
+    align-items: center;
+}
+
+.header-title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.addBook-container{
+    height: 5vh;
+    background-color: var(--blue-clear);
+    color: var(--text-white);
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    align-items: center;
+}
+
+.book-container{
+    height: 80vh;
+    background-color: var(--blue-clear);
+    padding: 2rem;
+}
+
+.book-card{
+    background-color: var(--purple-clear);
+    border-radius: 15px;
+    padding: 1rem;
+    color: var(--text-white);
+    width: 10rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.book-title{
+    font-weight: bold;
+}
+
+.book-read{
+    color: var(--text-white);
+    background-color: var(--blue-dark);
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 5px;
+    border: 1px solid var(--blue-dark);
+}
+
+.book-delete{
+    color: var(--text-white);
+    background-color: var(--purple-dark);
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 5px;
+    border: 1px solid var(--purple-dark);
+}
