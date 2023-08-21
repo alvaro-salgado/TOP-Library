@@ -73,19 +73,45 @@
 
 }
 
-input, .book-read{
+.book-label{
+    color: var(--text-white);
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.book-read{
+    accent-color: var(--purple-dark) ;
+}
+
+input{
     background-color: var(--blue-clear);
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
+    color: var(--text-white);
+    
 }
 
 .container-book-btn{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.book-cancel-btn, .book-submit-btn{
+.book-cancel-btn{
+    background-color: var(--purple-dark);
+    color: var(--text-white);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 6rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.book-submit-btn{
     background-color: var(--blue-clear);
     color: var(--text-white);
     font-weight: bold;
@@ -93,13 +119,23 @@ input, .book-read{
     border-radius: 5px;
     height: 1.5rem;
     width: 6rem;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 .book-container{
     height: 80vh;
     background-color: var(--blue-clear);
     padding: 2rem;
+    display: grid;
+    /* grid-template: auto/1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    overflow: auto;
 }
 
 .book-card{
@@ -115,11 +151,7 @@ input, .book-read{
     align-items: center;
 }
 
-.book-title{
-    font-weight: bold;
-}
-
-.book-read{
+.book-read-btn{
     color: var(--text-white);
     background-color: var(--blue-dark);
     height: 1.5rem;
